@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: hydrasil-server
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics
+hydrasil:
+  source-root: ${HYDRASIL_SOURCE_ROOT:s3://example-hydra-db/root}
+  checkpoint-root: ${HYDRASIL_CHECKPOINT_ROOT:s3://example-hydrasil/checkpoints}
+  bronze-table: ${HYDRASIL_BRONZE_TABLE:main.hydrasil_bronze.objects}
+  silver-schema: ${HYDRASIL_SILVER_SCHEMA:main.hydrasil_silver}

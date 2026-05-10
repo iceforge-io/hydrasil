@@ -1,0 +1,12 @@
+target/
+.idea/
+*.iml
+.vscode/
+.DS_Store
+*.log
+claude-logs/
+.ai-runs/
+generated-prompts/
+.env
+.env.*
+!.env.example
